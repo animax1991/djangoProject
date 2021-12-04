@@ -1,0 +1,12 @@
+
+<h1>Hello world</h1>
+{% block content %}
+{{ request.user }}
+<p>{{ my_text}} </p>
+{{my_list}}
+<ul>
+{% for my_sub_item in my_list %}
+<li>{{forloop.counter}} - {{my_sub_item}}</li>
+{% endfor %}
+    </ul>
+{% endblock %}
